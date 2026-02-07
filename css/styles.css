@@ -235,6 +235,10 @@ main {
   justify-content: center;
   gap: 1rem;
 }
+
+.text{
+  border:1px dotted red;
+}
 .project li {
   background-color: var(--marina);
   color: var(--white);
