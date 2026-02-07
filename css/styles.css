@@ -26,7 +26,6 @@
 html {
   box-sizing: border-box;
   color-scheme: light dark;
-
 }
 html:has(#mode-switcher #light:checked) {
   color-scheme: light;
@@ -203,9 +202,10 @@ ul svg {
   object-fit: cover;
   object-position: center;
   height: 175px;
-  width: 300px;
+  width: 100%;
   overflow: hidden;
   margin: 0 auto;
+  aspect-ratio:100%;
 }
 /* projects */
 main {
@@ -236,8 +236,8 @@ main {
   gap: 1rem;
 }
 
-.text{
-  border:1px dotted red;
+.text {
+  border: 1px dotted red;
 }
 .project li {
   background-color: var(--marina);
