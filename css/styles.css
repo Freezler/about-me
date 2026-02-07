@@ -26,7 +26,7 @@
 html {
   box-sizing: border-box;
   color-scheme: light dark;
-  user-select: none;
+
 }
 html:has(#mode-switcher #light:checked) {
   color-scheme: light;
@@ -38,6 +38,7 @@ html:has(#mode-switcher #dark:checked) {
 *::before,
 *::after {
   box-sizing: inherit;
+  user-select: none;
 }
 .wrapper {
   max-width: 1200px;
@@ -47,7 +48,7 @@ html:has(#mode-switcher #dark:checked) {
 /* Basic page set to our font size and font family. Link to the font family in CodePen under Settings - CSS - External stylesheets and pens. */
 body {
   font-size: var(--base-font-size);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Oswald", sans-serif;
   background-color: var(--ld-bkgd);
   color: var(--ld-text);
   transition: all 260ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
