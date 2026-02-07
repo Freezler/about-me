@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap");
 /* starting variables for the site */
 :root {
   --white: oklch(
@@ -25,6 +26,7 @@
 html {
   box-sizing: border-box;
   color-scheme: light dark;
+  user-select: none;
 }
 html:has(#mode-switcher #light:checked) {
   color-scheme: light;
@@ -172,10 +174,11 @@ a:hover {
   justify-content: center;
   align-items: flex-end;
   gap: 2rem;
+  height: 72px;
 }
 ul svg {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
 }
 .social {
   fill: var(--ld-blue);
