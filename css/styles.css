@@ -398,12 +398,31 @@ footer {
     gap: 2rem;
   }
   .project img {
-    grid-row: auto;
+
+    grid-column: 2/2;
+    max-height: 400px;
+    place-self: center;;
   }
   .project ul {
     justify-content: flex-start;
   }
   .main-article img {
     border-radius: var(--corners);
+    aspect-ratio: 16/9;
   }
+}
+
+.project .text {
+  display: grid;
+  grid: subgrid;
+  grid-template-rows: 1fr auto 1fr;
+  gap: 1rem;
+}
+
+.project .text p {
+  grid-row: 2;
+}
+
+.project .text ul {
+  grid-row: 3;
 }
